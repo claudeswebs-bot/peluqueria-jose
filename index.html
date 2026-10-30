@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peluquería de José y Tattoo · Murcia</title>
+<meta name="description" content="Corte de pelo de hombre y tatuajes en Calle Alonso de Ojeda 3 Bajo, Murcia. Pide tu cita por WhatsApp.">
+<meta name="theme-color" content="#0c0c0d">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Peluquería de José y Tattoo · Murcia">
+<meta property="og:description" content="Corte de pelo de hombre y tatuajes en Calle Alonso de Ojeda 3 Bajo, Murcia. Pide tu cita por WhatsApp.">
+<!-- Cuando la web tenga su dirección final y una foto, añadir también og:url y og:image -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%82%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0c0d; --bg2:#111113; --line:#232326;
+  --text:#ece8e1; --muted:#98938a;
+  --gold:#c8a45e; --copper:#b87344;
+  --grad:linear-gradient(135deg,#d6b46c 0%,#b87344 100%);
+  --wa:#25d366;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.03em;line-height:1.08}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+section{padding:96px 0}
+.i{width:20px;height:20px;flex:none;fill:currentColor}
+
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(12,12,13,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Oswald',sans-serif;font-weight:500;font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em}
+.logo span{color:var(--gold)}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:.88rem;color:var(--muted)}
+.nav ul a{transition:color .2s}
+.nav ul a:hover{color:var(--gold)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-family:inherit;font-size:.95rem;border-radius:4px;padding:14px 26px;border:0;cursor:pointer;transition:transform .15s,filter .2s,border-color .2s}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--grad);color:#17110a}
+.btn-gold:hover{filter:brightness(1.08)}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid #3a3a3f}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-sm{padding:10px 18px;font-size:.88rem}
+
+/* HERO */
+.hero{padding:76px 0 70px;background:radial-gradient(700px 320px at 90% -10%,rgba(184,115,68,.14),transparent 65%),var(--bg)}
+.sign{display:inline-flex;align-items:center;gap:16px;border:1px solid var(--line);border-radius:6px;padding:14px 24px 14px 20px;margin-bottom:30px;background:rgba(255,255,255,.02)}
+.sign div span{display:block;color:var(--muted);font-size:.9rem}
+.sign b{display:block;font-family:'Oswald',sans-serif;font-weight:500;font-size:1.4rem;text-transform:uppercase;letter-spacing:.08em;line-height:1.15}
+.dot{width:14px;height:14px;border-radius:50%;background:#666;flex:none}
+.sign.open{border-color:rgba(37,211,102,.45)}
+.sign.open .dot{background:var(--wa);box-shadow:0 0 0 5px rgba(37,211,102,.18)}
+.sign.open b{color:var(--wa)}
+.sign.closed{border-color:rgba(184,115,68,.5)}
+.sign.closed .dot{background:var(--copper);box-shadow:0 0 0 5px rgba(184,115,68,.18)}
+.sign.closed b{color:var(--copper)}
+.hero h1{font-size:clamp(2.5rem,7.4vw,5rem);max-width:820px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{font-size:clamp(1.02rem,2.2vw,1.18rem);color:var(--muted);max-width:540px;margin-bottom:36px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:64px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.fact{padding:24px 24px 0 0}
+.fact+.fact{padding-left:24px;border-left:1px solid var(--line)}
+.fact small{display:block;color:var(--copper);text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;font-weight:600;margin-bottom:6px}
+.fact b{display:block;font-weight:500}
+.fact span{color:var(--muted);font-size:.9rem}
+
+/* TITLES */
+.eyebrow{color:var(--copper);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(1.9rem,4.4vw,2.8rem);margin-bottom:14px}
+.sub{color:var(--muted);max-width:520px;margin-bottom:48px}
+
+/* SERVICES */
+#servicios{background:var(--bg2);border-block:1px solid var(--line)}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.service{padding:8px 44px 8px 0}
+.service+.service{padding:8px 0 8px 44px;border-left:1px solid var(--line)}
+.service .n{font-family:'Oswald',sans-serif;color:var(--gold);font-size:.95rem;letter-spacing:.12em;margin-bottom:14px;display:block}
+.service h3{font-size:1.6rem;margin-bottom:12px}
+.service p{color:var(--muted);margin-bottom:26px;max-width:380px}
+
+/* ABOUT */
+.about{max-width:640px}
+.about p{color:var(--muted);font-size:1.08rem;margin-bottom:16px}
+.about p strong{color:var(--text);font-weight:500}
+.about .tel{display:inline-block;margin-top:10px;color:var(--gold);font-weight:600;border-bottom:1px solid rgba(200,164,94,.4);padding-bottom:2px}
+
+/* GALLERY */
+#galeria{background:var(--bg2);border-block:1px solid var(--line)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.g{position:relative;overflow:hidden;aspect-ratio:1/1;border-radius:4px;background:#0f0f10;border:1px solid var(--line)}
+.g img,.g .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.g .cap{position:absolute;left:14px;bottom:12px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(236,232,225,.55);z-index:1}
+@media (hover:hover){.g:hover img,.g:hover .ph{transform:scale(1.07)}}
+/* Bloques de color de relleno: se sustituyen por fotos reales */
+.ph1{background:linear-gradient(145deg,#2a2218,#15110c)}
+.ph2{background:linear-gradient(145deg,#3a2517,#1a110a)}
+.ph3{background:linear-gradient(145deg,#1d1d20,#0e0e10)}
+.ph4{background:linear-gradient(145deg,#33291a,#16120a)}
+.ph5{background:linear-gradient(145deg,#2b1d14,#120c08)}
+.ph6{background:linear-gradient(145deg,#222226,#101012)}
+
+/* REVIEWS */
+#resenas{border-bottom:1px solid var(--line)}
+.reviews{max-width:640px}
+.reviews .sub{margin-bottom:28px}
+.reviews .links{margin-bottom:18px}
+.reviews .note{color:var(--muted);font-size:.85rem}
+
+/* BOOKING */
+.book{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.form{border:1px solid var(--line);border-radius:6px;padding:30px;background:var(--bg2)}
+.form label.t{display:block;font-weight:500;margin-bottom:10px;font-size:.88rem;color:var(--muted)}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0}
+.chip span{display:block;text-align:center;padding:13px 10px;border:1px solid var(--line);border-radius:4px;cursor:pointer;font-weight:500;transition:.15s}
+.chip input:checked+span{border-color:var(--gold);color:var(--gold);background:rgba(200,164,94,.07)}
+.chip input:focus-visible+span{outline:2px solid var(--copper);outline-offset:2px}
+.field{margin-bottom:18px}
+.field input,.field select{width:100%;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:4px;padding:12px 14px;font:inherit}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.preview{border-left:2px solid var(--copper);padding:4px 0 4px 14px;font-size:.9rem;color:var(--muted);margin:4px 0 22px}
+.preview b{display:block;color:var(--copper);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.form .btn{width:100%}
+.steps{list-style:none;counter-reset:s;padding-top:8px}
+.steps li{counter-increment:s;display:flex;gap:18px;margin-bottom:30px}
+.steps li::before{content:"0" counter(s);flex:none;font-family:'Oswald',sans-serif;color:var(--gold);letter-spacing:.1em;font-size:1rem;padding-top:1px}
+.steps b{display:block;font-weight:500}
+.steps span{color:var(--muted);font-size:.93rem}
+
+/* HOURS + LOCATION */
+#donde{background:var(--bg2);border-top:1px solid var(--line)}
+.loc{display:grid;grid-template-columns:1fr 1.15fr;gap:48px}
+.hours{width:100%;border-collapse:collapse;margin-bottom:26px}
+.hours td{padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--gold);font-weight:500}
+.hours tr.today td:first-child::after{content:" · hoy";color:var(--copper);font-size:.78rem}
+.addr{margin-bottom:20px}
+.addr b{display:block;font-weight:500;font-size:1.05rem}
+.addr span{color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.map{border-radius:4px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--bg)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.75) invert(.92) contrast(.88) sepia(.15)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:30px 0 110px;color:var(--muted);font-size:.85rem}
+.foot{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.foot a:hover{color:var(--gold)}
+
+/* BOTÓN FLOTANTE WHATSAPP CON PULSO SUAVE */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;align-items:center;gap:10px;background:var(--wa);color:#05230f;font-weight:600;font-size:.95rem;padding:15px 22px 15px 18px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.45);animation:pulse 2.8s ease-out infinite;transition:transform .2s}
+.fab:hover{transform:translateY(-2px)}
+.fab .i{width:26px;height:26px}
+@keyframes pulse{
+  0%{box-shadow:0 8px 24px rgba(0,0,0,.45),0 0 0 0 rgba(37,211,102,.45)}
+  70%{box-shadow:0 8px 24px rgba(0,0,0,.45),0 0 0 18px rgba(37,211,102,0)}
+  100%{box-shadow:0 8px 24px rgba(0,0,0,.45),0 0 0 0 rgba(37,211,102,0)}
+}
+
+/* APARICIÓN AL HACER SCROLL */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .fab{animation:none}
+  .g img,.g .ph{transition:none}
+  html{scroll-behavior:auto}
+}
+
+@media (max-width:860px){
+  section{padding:68px 0}
+  .nav ul{display:none}
+  .facts,.services,.book,.loc{grid-template-columns:1fr}
+  .fact,.fact+.fact{padding:18px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .service,.service+.service{padding:8px 0;border-left:0}
+  .service+.service{border-top:1px solid var(--line);margin-top:34px;padding-top:34px}
+  .book,.loc{gap:40px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .reviews .links .btn{width:100%}
+  .hero{padding-top:50px}
+  .cta .btn{width:100%}
+}
+@media (max-width:480px){
+  .row2{grid-template-columns:1fr}
+  .fab{padding:16px}
+  .fab span{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Icono de WhatsApp (se reutiliza en todos los botones) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="logo">Peluquería de José <span>&amp;</span> Tattoo</a>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#reservar">Reservar</a></li>
+      <li><a href="#donde">Horario</a></li>
+    </ul>
+    <a class="btn btn-gold btn-sm" data-wa="general" href="#" target="_blank" rel="noopener">Pedir cita</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="sign" id="status" role="status" aria-live="polite"><span class="dot"></span><div><b id="signMain">Comprobando horario…</b><span id="statusText"></span></div></div>
+    <h1>Corte de pelo y <em>tatuajes</em> en Murcia</h1>
+    <p class="lead">Llevamos varios años en el barrio. Cortamos el pelo a hombres y hacemos tatuajes, en Calle Alonso de Ojeda 3 Bajo.</p>
+    <div class="cta">
+      <a class="btn btn-gold" data-wa="general" href="#" target="_blank" rel="noopener">
+        <svg class="i"><use href="#wa"/></svg> Pedir cita por WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="tel:+34627852184">Llamar al 627 85 21 84</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><small>Quiénes somos</small><b>Peluquería y estudio de tatuajes</b><span>En el barrio desde hace años</span></div>
+      <div class="fact"><small>Dónde estamos</small><b>Calle Alonso de Ojeda 3 Bajo</b><span>Murcia</span></div>
+      <div class="fact"><small>Qué hacemos</small><b>Corte de pelo de hombre</b><span>Y tatuajes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="wrap">
+    <p class="eyebrow rv">Servicios</p>
+    <h2 class="rv">Qué hacemos</h2>
+    <p class="sub rv">Dos cosas, las dos en el mismo local.</p>
+    <div class="services">
+      <article class="service rv">
+        <span class="n">01</span>
+        <h3>Corte de pelo</h3>
+        <p>Corte de hombre, como lo quieras. Te lo hacemos con tiempo y sin prisas.</p>
+        <a class="btn btn-ghost btn-sm" data-wa="corte" href="#" target="_blank" rel="noopener">Pedir cita para un corte</a>
+      </article>
+      <article class="service rv">
+        <span class="n">02</span>
+        <h3>Tatuajes</h3>
+        <p>Cuéntanos qué te quieres hacer y lo hablamos antes de empezar. Si tienes fotos de referencia, mándalas por WhatsApp.</p>
+        <a class="btn btn-ghost btn-sm" data-wa="tatuaje" href="#" target="_blank" rel="noopener">Preguntar por un tatuaje</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section>
+  <div class="wrap about rv">
+    <p class="eyebrow">Sobre nosotros</p>
+    <h2>Un negocio de barrio</h2>
+    <p><strong>Llevamos varios años en La Flota.</strong> Hacemos cortes de pelo de hombre y tatuajes, en un local cuidado y limpio.</p>
+    <p>Lo que más nos dicen los clientes es que el trato es cercano, el precio es justo y no paramos hasta que el corte queda como lo querías. Mientras esperas, puedes tomarte un café o echar una partida a la máquina recreativa.</p>
+    <p>Si tienes dudas sobre qué corte o qué tatuaje te conviene, escríbenos y lo hablamos.</p>
+    <a class="tel" href="tel:+34627852184">+34 627 85 21 84</a>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="wrap">
+    <p class="eyebrow rv">Galería</p>
+    <h2 class="rv">Nuestros trabajos</h2>
+    <p class="sub rv">Algunos cortes y tatuajes recientes.</p>
+    <!--
+      PARA PONER TUS FOTOS: sustituye cada <div class="ph phN"></div> por
+      <img src="tu-foto.jpg" alt="Descripción de la foto" loading="lazy">
+      El efecto de zoom funciona igual con imágenes.
+    -->
+    <div class="gallery">
+      <figure class="g rv"><div class="ph ph1"></div><figcaption class="cap">Foto 1</figcaption></figure>
+      <figure class="g rv"><div class="ph ph2"></div><figcaption class="cap">Foto 2</figcaption></figure>
+      <figure class="g rv"><div class="ph ph3"></div><figcaption class="cap">Foto 3</figcaption></figure>
+      <figure class="g rv"><div class="ph ph4"></div><figcaption class="cap">Foto 4</figcaption></figure>
+      <figure class="g rv"><div class="ph ph5"></div><figcaption class="cap">Foto 5</figcaption></figure>
+      <figure class="g rv"><div class="ph ph6"></div><figcaption class="cap">Foto 6</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section id="resenas">
+  <div class="wrap reviews">
+    <p class="eyebrow rv">Reseñas</p>
+    <h2 class="rv">Opiniones de clientes</h2>
+    <p class="sub rv">Nuestros clientes cuentan su experiencia en Google. Léelas allí o deja la tuya: nos ayuda mucho.</p>
+    <div class="links rv">
+      <a class="btn btn-gold" id="gWrite" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=La+Peluquer%C3%ADa+de+Jos%C3%A9+Calle+Alonso+de+Ojeda+3+Murcia">Dejar una reseña en Google</a>
+      <a class="btn btn-ghost" id="gSee" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=La+Peluquer%C3%ADa+de+Jos%C3%A9+Calle+Alonso+de+Ojeda+3+Murcia">Ver reseñas en Google</a>
+    </div>
+    <p class="note rv">Las reseñas son de clientes reales y se publican en Google.</p>
+  </div>
+</section>
+
+<!-- RESERVAR -->
+<section id="reservar">
+  <div class="wrap">
+    <p class="eyebrow rv">Reservar</p>
+    <h2 class="rv">Pide tu cita</h2>
+    <p class="sub rv">Dinos qué quieres y se abre WhatsApp con el mensaje ya escrito. Solo tienes que enviarlo.</p>
+    <div class="book">
+      <form class="form rv" id="bookForm" onsubmit="return false">
+        <label class="t">¿Qué necesitas?</label>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="svc" value="corte" checked><span>Corte de pelo</span></label>
+          <label class="chip"><input type="radio" name="svc" value="tatuaje"><span>Tatuaje</span></label>
+        </div>
+        <div class="field">
+          <label class="t" for="name">Tu nombre (opcional)</label>
+          <input id="name" type="text" placeholder="Ej. Antonio" autocomplete="given-name">
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label class="t" for="day">Día que prefieres</label>
+            <select id="day">
+              <option value="">Me da igual</option>
+              <option>Lunes</option><option>Martes</option><option>Miércoles</option><option>Jueves</option><option>Viernes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="t" for="when">Mañana o tarde</label>
+            <select id="when">
+              <option value="">Cualquiera</option>
+              <option>por la mañana</option><option>por la tarde</option>
+            </select>
+          </div>
+        </div>
+        <div class="preview"><b>Tu mensaje</b><span id="preview"></span></div>
+        <a class="btn btn-gold" id="sendWa" href="#" target="_blank" rel="noopener">
+          <svg class="i"><use href="#wa"/></svg> Enviar por WhatsApp
+        </a>
+      </form>
+      <ol class="steps rv">
+        <li><div><b>Elige corte o tatuaje</b><span>Y el día que mejor te venga, si quieres.</span></div></li>
+        <li><div><b>Pulsa el botón</b><span>Se abre WhatsApp con el mensaje listo.</span></div></li>
+        <li><div><b>Te confirmamos la cita</b><span>Te respondemos por ahí, en horario de apertura.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- HORARIO Y UBICACIÓN -->
+<section id="donde">
+  <div class="wrap">
+    <p class="eyebrow rv">Horario y ubicación</p>
+    <h2 class="rv">Dónde estamos</h2>
+    <p class="sub rv">Calle Alonso de Ojeda 3 Bajo, Murcia.</p>
+    <div class="loc">
+      <div class="rv">
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>Lunes</td><td>9:30–13:00 · 16:30–20:30</td></tr>
+          <tr data-d="2"><td>Martes</td><td>9:30–13:00 · 16:30–20:30</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>9:30–13:00 · 16:30–20:30</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>9:30–20:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>9:30–20:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>Cerrado</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+        <div class="addr">
+          <b>Calle Alonso de Ojeda 3 Bajo</b>
+          <span>Murcia</span>
+        </div>
+        <div class="links">
+          <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Calle+Alonso+de+Ojeda+3,+Murcia">Cómo llegar</a>
+          <a class="btn btn-ghost btn-sm" href="tel:+34627852184">Llamar</a>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe title="Mapa: Calle Alonso de Ojeda 3, Murcia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Calle%20Alonso%20de%20Ojeda%203%2C%20Murcia&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr"></span> Peluquería de José y Tattoo · Calle Alonso de Ojeda 3 Bajo, Murcia</div>
+    <a href="tel:+34627852184">+34 627 85 21 84</a>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp con pulso suave -->
+<a class="fab" data-wa="general" href="#" target="_blank" rel="noopener" aria-label="Pedir cita por WhatsApp">
+  <svg class="i"><use href="#wa"/></svg>
+  <span>Pedir cita</span>
+</a>
+
+<script>
+(function(){
+  var PHONE = "34627852184";
+  var wa = function(msg){ return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg); };
+
+  /* Mensajes rápidos de los botones sueltos */
+  var quick = {
+    general: "Hola José, quería pedir cita. ¿Qué huecos tenéis?",
+    corte: "Hola José, quería pedir cita para cortarme el pelo. ¿Qué huecos tenéis?",
+    tatuaje: "Hola José, quería preguntar por un tatuaje y pedir cita. ¿Cuándo podría pasarme?"
+  };
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = wa(quick[a.dataset.wa] || quick.general);
+  });
+
+  /* Reseñas de Google.
+     Para que "Dejar una reseña" abra directamente la ventana de escribir,
+     pega aquí el ID de la ficha de José (se saca con "Place ID Finder" de Google).
+     Mientras esté vacío, el botón abre su ficha en Google Maps. */
+  var GOOGLE_PLACE_ID = "";
+  if(GOOGLE_PLACE_ID){
+    document.getElementById("gWrite").href = "https://search.google.com/local/writereview?placeid=" + encodeURIComponent(GOOGLE_PLACE_ID);
+  }
+
+  /* Formulario de reserva → mensaje personalizado */
+  var form = document.getElementById("bookForm");
+  var prev = document.getElementById("preview");
+  var send = document.getElementById("sendWa");
+  function build(){
+    var svc = form.querySelector("input[name=svc]:checked").value;
+    var name = document.getElementById("name").value.trim();
+    var day = document.getElementById("day").value;
+    var when = document.getElementById("when").value;
+    var msg = "Hola José" + (name ? ", soy " + name : "") + ". ";
+    msg += svc === "corte"
+      ? "Quería pedir cita para cortarme el pelo"
+      : "Quería preguntar por un tatuaje y pedir cita";
+    if(day || when){
+      msg += ", a poder ser" + (day ? " el " + day.toLowerCase() : "") + (when ? " " + when : "");
+    }
+    msg += ". ¿Qué huecos tenéis? Gracias.";
+    prev.textContent = msg;
+    send.href = wa(msg);
+  }
+  form.addEventListener("input", build);
+  form.addEventListener("change", build);
+  build();
+
+  /* Horario: abierto/cerrado ahora (hora de Madrid) */
+  var H = {
+    0: [], 6: [],
+    1: [[570,780],[990,1230]],
+    2: [[570,780],[990,1230]],
+    3: [[570,780],[990,1230]],
+    4: [[570,1200]],
+    5: [[570,1200]]
+  };
+  var days = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+  function fmt(m){ var h=Math.floor(m/60), mm=m%60; return h+":"+(mm<10?"0":"")+mm; }
+  function madridNow(){
+    var parts = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+    var o = {}; parts.forEach(function(p){ o[p.type]=p.value; });
+    var map = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+    return { d: map[o.weekday], m: (parseInt(o.hour,10)%24)*60 + parseInt(o.minute,10) };
+  }
+  function status(){
+    var n = madridNow(), el = document.getElementById("status"), tx = document.getElementById("statusText"), main = document.getElementById("signMain");
+    var slots = H[n.d], cur = null;
+    for(var i=0;i<slots.length;i++){ if(n.m>=slots[i][0] && n.m<slots[i][1]) cur = slots[i]; }
+    if(cur){
+      el.className = "sign open";
+      main.textContent = "Abierto ahora";
+      tx.textContent = "Cerramos a las " + fmt(cur[1]);
+      return;
+    }
+    el.className = "sign closed";
+    main.textContent = "Cerrado ahora";
+    for(var k=0;k<8;k++){
+      var d = (n.d + k) % 7, s = H[d];
+      for(var j=0;j<s.length;j++){
+        if(k>0 || s[j][0] > n.m){
+          var when = k===0 ? "hoy" : (k===1 ? "mañana" : "el " + days[d]);
+          tx.textContent = "Abrimos " + when + " a las " + fmt(s[j][0]);
+          return;
+        }
+      }
+    }
+  }
+  status(); setInterval(status, 60000);
+
+  var today = madridNow().d;
+  var row = document.querySelector('#hours tr[data-d="' + today + '"]');
+  if(row) row.classList.add("today");
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* Aparición suave al hacer scroll */
+  var items = document.querySelectorAll(".rv");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    },{threshold:.12});
+    items.forEach(function(i){ io.observe(i); });
+  } else { items.forEach(function(i){ i.classList.add("in"); }); }
+})();
+</script>
+</body>
+</html>
